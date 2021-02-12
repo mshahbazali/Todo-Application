@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="main">
+            <div class="header">
+                <div class="heading" id="heading">
+                    <h2>TODO APPLICATION</h2>
+                    <img src="search.png" alt="" class="searchicon" onclick="display()">
+                </div>
+            </div>
+            <div class="searchInput" id="searchInput" style="display: none;">
+                <input type="search" placeholder="Search Task" id="search" class="search">
+                <img src="back.png" alt="" class="back" onclick="back()">
+            </div>
+            <div class="addtask">
+                <input type="text" placeholder="Enter Your Task" class="addinput" id="addinput" maxlength="19">
+                <!-- <input type="hidden" id="save"> -->
+                <div class="btn">
+                    <button class="add" id="addBtn"><img src="add.png" alt=""></button>
+                    <button class="add" id="updateBtn" style="display: none;" onclick="updateVal(this)"><img
+                            src="update.png" alt=""></button>
+                    <button class="alldelete" id="alldelete" onclick="alldelete()"><img src="delete.png"
+                            alt=""></button>
+                </div>
+            </div>
+            <table id="taskView">
+                <!-- <tr>
+                    <th></th>
+                    <td class="name">Name</td>
+                    <td class="edit"><img src="edit.png" alt=""></td>
+                    <td class="delete"><img src="delete.png" alt=""></td>
+                </tr> -->
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
